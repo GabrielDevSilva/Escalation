@@ -88,7 +88,7 @@ function addToList() {
 function removePlayer() {
     const section = document.getElementById('list');
 
-    const number = Number(prompt('insira o número'));
+    const number = Number(prompt('Insira o número do jogador que você deseja remover.'));
 
     const numberPlayer = document.getElementById('player-' + number);
 
@@ -99,7 +99,6 @@ function removePlayer() {
     if (numberPlayer) {
         string = numberPlayer.textContent.split(' ');
         numberSelected = string[2].slice(1, 2);
-        console.log(numberPlayer, string[2].slice(1, 2));
     }
 
     number === Number(numberSelected) ?
